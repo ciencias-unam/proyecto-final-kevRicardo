@@ -1,25 +1,6 @@
 module FibonacciHeap where
 
-    {-- | Representación de Heap Binomial
-    rango. El rango que tendrá el heap
-    raíz. El elemento raíz del heap
-    hijos. Subárboles hijos del heap
-    --}
-    data BTree a = Node { rango :: Int,
-                        raiz :: a,
-                        hijos :: [BTree a] } 
-                        deriving (Eq, Show, Ord)
-
-    -- | Instancia Functor a Binary Tree
-    instance Functor BTree where
-        fmap f (Node ra r h) = Node ra (f r) (map (fmap f) h)
-
-    -- | Instancia Applicative a Binary Tree
-    instance Applicative BTree where
-        pure a = Node 1 a []
-
-        --Node _ r [] <*> btree = fmap r btree
-        Node _ r h <*> btree = fmap r btree
+    import BinomialHeap
 
     {-- | Representación de un Heap Fibonacci
     tam. El tamaño del heap
@@ -34,21 +15,31 @@ module FibonacciHeap where
     -- | Instancia Functor a Fibonacci Heap
     instance Functor FHeap where
         fmap f Empty = Empty
-        fmap f (FHeap t m a) = FHeap t (fmap f m) (map (fmap f) a)
+        fmap f fheap = FHeap (tam fheap)
+                             (f <$> (mTree fheap))
+                             (map (f <$>) (arboles fheap))
 
     -- | Instancia Applicative a Fibonacci Heap
     instance Applicative FHeap where
-        pure a = FHeap 1 (Node 1 a []) []
+        pure a = FHeap 1 (pure a) []
 
         Empty <*> _ = Empty
         --(FHeap t m a) <*> fhy = fmap m a
 
+    instance Foldable FHeap where
+        foldr f acc Empty = acc
+        foldr f acc (FHeap t m []) = foldr f acc m
+        foldr f acc (FHeap t m (a:as)) = foldr f (foldr f (foldr f acc m) Empty) (FHeap t a as)
+
+    ftree = FHeap 1 (Node 1 24 []) [Node 3 4 [], Node 2 5 []]
+
     ordena :: (Ord a) => FHeap a -> FHeap a -> FHeap a
     ordena Empty fh = fh
-    ordena fh Empty = fh
-    ordena (FHeap t1 m1 a1) (FHeap t2 m2 a2)
-        | raiz m1 < raiz m2 = FHeap (t1+t2) m1 (m2:a1++a2)
-        | otherwise = FHeap (t1+t2) m2 (m1: a1++a2)
+    ordena fh@(FHeap t1 m1 a1) fheap = case fheap of
+        Empty -> fh
+        (FHeap t2 m2 a2) -> if raiz m1 < raiz m2
+            then FHeap (t1+t2) m1 (m2:a1++a2)
+            else FHeap (t1+t2) m2 (m1:a1++a2)
 
     inserta :: (Ord a) => FHeap a -> a -> FHeap a
     inserta fib elem = ordena fib $ pure elem
