@@ -7,10 +7,8 @@ module FibonacciHeap where
     mTree. Árbol mínimo del heap
     arboles. Subárboles del hijo
     --}
-    data FHeap a = Empty | FHeap { tam :: Int,
-                             mTree :: BTree a,
-                             arboles :: [BTree a] }
-                             deriving (Eq, Show, Ord)
+    data FHeap a = Empty | FHeap {tam :: Int, mTree :: BTree a, arboles :: [BTree a]}
+                    deriving (Eq, Show, Ord)
 
     -- | Instancia Functor a Fibonacci Heap
     instance Functor FHeap where
@@ -26,12 +24,11 @@ module FibonacciHeap where
         Empty <*> _ = Empty
         --(FHeap t m a) <*> fhy = fmap m a
 
+    -- | Instancia Foldable a Fibonacci Heap
     instance Foldable FHeap where
         foldr f acc Empty = acc
         foldr f acc (FHeap t m []) = foldr f acc m
         foldr f acc (FHeap t m (a:as)) = foldr f (foldr f (foldr f acc m) Empty) (FHeap t a as)
-
-    ftree = FHeap 1 (Node 1 24 []) [Node 3 4 [], Node 2 5 []]
 
     ordena :: (Ord a) => FHeap a -> FHeap a -> FHeap a
     ordena Empty fh = fh
@@ -40,7 +37,7 @@ module FibonacciHeap where
         (FHeap t2 m2 a2) -> if raiz m1 < raiz m2
             then FHeap (t1+t2) m1 (m2:a1++a2)
             else FHeap (t1+t2) m2 (m1:a1++a2)
-
+ 
     inserta :: (Ord a) => FHeap a -> a -> FHeap a
     inserta fib elem = ordena fib $ pure elem
 
