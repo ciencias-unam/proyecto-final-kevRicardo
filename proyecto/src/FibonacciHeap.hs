@@ -57,10 +57,12 @@ module FibonacciHeap where
     getMinElemento :: (Ord a) => FHeap a -> BTree a
     getMinElemento = minTree
 
-    liga :: (Ord a) => BTree a -> BTree a -> BTree a
-    liga t1@(Node ra1 r1 h1) t2@(Node ra2 r2 h2)
-        | r1 < r2 = Node (ra1+1) r1 (t2:h1)
-        | otherwise = Node (ra1+1) r2 (t1:h2)
+    eliminaMinimo :: (Ord a) => FHeap a -> FHeap a
+    eliminaMinimo (FHeap _ (Node _ n []) []) = Empty
+    eliminaMinimo (FHeap t m a) = FHeap (t-1) min arboles
+      where
+        (min, arboles) = getMinimo $ fusionaBTree $ (hijos m) ++ a
+        
 
     fh = FHeap 5 (Node 1 0 []) [
         Node 1 1 [],
