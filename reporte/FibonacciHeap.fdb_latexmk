@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1612802850 "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.tex" "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.pdf" "FibonacciHeap" 1612802851
+["pdflatex"] 1612980544 "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.tex" "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.pdf" "FibonacciHeap" 1612980545
   "/etc/texmf/web2c/texmf.cnf" 1585929584 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.aux" 1612802851 793 6ed7c32e7d3663f518b2e288b72a5a41 ""
-  "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.tex" 1612802850 1456 b7fd3c0db9d702f07fd5d5fc4a6512b0 ""
+  "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.aux" 1612980544 793 6ed7c32e7d3663f518b2e288b72a5a41 ""
+  "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.tex" 1612980543 1463 8e01e54af90600d8c73698578b361eb7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -170,13 +170,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1585931472 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1585931529 8256344 0de658d78b8253bc051ea9ced0a77bc9 ""
-  "FibonacciHeap.aux" 1612802851 793 6ed7c32e7d3663f518b2e288b72a5a41 "pdflatex"
-  "FibonacciHeap.out" 1612802851 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "FibonacciHeap.tex" 1612802850 1456 b7fd3c0db9d702f07fd5d5fc4a6512b0 ""
+  "FibonacciHeap.aux" 1612980544 793 6ed7c32e7d3663f518b2e288b72a5a41 "pdflatex"
+  "FibonacciHeap.out" 1612980544 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "FibonacciHeap.tex" 1612980543 1463 8e01e54af90600d8c73698578b361eb7 ""
   (generated)
-  "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.pdf"
+  "FibonacciHeap.pdf"
   "FibonacciHeap.out"
+  "FibonacciHeap.log"
   "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.log"
   "FibonacciHeap.aux"
-  "FibonacciHeap.pdf"
-  "FibonacciHeap.log"
+  "/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.pdf"

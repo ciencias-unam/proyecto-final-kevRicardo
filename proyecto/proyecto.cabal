@@ -18,7 +18,9 @@ cabal-version:       >=1.10
 executable proyecto
   main-is:             Main.hs
   other-modules:       BinomialHeap, 
-                       FibonacciHeap
+                       FibonacciHeap,
+                       Dijkstra,
+                       Prim
   -- other-extensions:
   build-depends:       base >=4.12 && <4.13
   hs-source-dirs:      src
