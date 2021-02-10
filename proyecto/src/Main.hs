@@ -1,5 +1,4 @@
 module Main (main) where
 
-
 main :: IO ()
-main = return ()
+main = putStrLn "Hello, World!"

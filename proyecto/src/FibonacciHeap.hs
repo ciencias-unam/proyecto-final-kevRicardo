@@ -57,6 +57,7 @@ module FibonacciHeap where
     getMinElemento :: (Ord a) => FHeap a -> BTree a
     getMinElemento = minTree
 
+    -- | Elimina el elemento mínimo de un Fibonacci Heap
     eliminaMinimo :: (Ord a) => FHeap a -> FHeap a
     eliminaMinimo (FHeap _ (Node _ n []) []) = Empty
     eliminaMinimo (FHeap t m a) = FHeap (t-1) min arboles
