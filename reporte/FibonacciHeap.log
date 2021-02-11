@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.3)  10 FEB 2021 12:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.3)  11 FEB 2021 12:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -806,36 +806,42 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 58.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<img/treepath.png, id=32, 383.4325pt x 701.62125pt>
+File: img/treepath.png Graphic file (type png)
+<use img/treepath.png>
+Package pdftex.def Info: img/treepath.png  used on input line 78.
+(pdftex.def)             Requested size: 191.71577pt x 350.80975pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 \end{document}
-                    [1]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+l.81 \end{document}
+                    [1 </home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/img/treepath.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (/home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `FibonacciHeap.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
+(rerunfilecheck)             Checksum: 898944BF4AF769BC1027C96CC27D442B;252.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 22151 strings out of 481239
- 398187 string characters out of 5920378
- 670319 words of memory out of 5000000
- 36987 multiletter control sequences out of 15000+600000
- 536939 words of font info for 43 fonts, out of 8000000 for 9000
+ 22174 strings out of 481239
+ 398519 string characters out of 5920378
+ 672330 words of memory out of 5000000
+ 37003 multiletter control sequences out of 15000+600000
+ 538159 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,7n,60p,483b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.pdf (2 pages, 36803 bytes).
+Output written on /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.pdf (2 pages, 73533 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 52 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 50 words of extra memory for PDF output out of 10000 (max. 10000000)
 

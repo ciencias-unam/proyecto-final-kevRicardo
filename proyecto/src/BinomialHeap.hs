@@ -37,6 +37,7 @@ module BinomialHeap where
     fusionaBTree :: (Ord a) => [BTree a] -> [BTree a]
     fusionaBTree ts = foldl fusiona [] ts
       where
+        -- ^ Fusiona los árboles con el mismo rango
         fusiona [] btree = [btree]
         fusiona (x:xs) t = if rango x == rango t 
             then fusiona xs (ligaBTree t x)
@@ -50,4 +51,5 @@ module BinomialHeap where
         then (x,xs)
         else (btree, x:btrees)
       where
+        -- ^ Obtiene el árbol mínimo y el resto de árboles
         (btree, btrees) = getMinimo xs

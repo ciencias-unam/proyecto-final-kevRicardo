@@ -252,10 +252,10 @@ INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/Fibona
 INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.out
 INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.out
 INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.out
+OUTPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.pdf
 INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.out
 INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.out
 OUTPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.out
-OUTPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -287,6 +287,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/img/treepath.png
+INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/img/treepath.png
+INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/img/treepath.png
 INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.aux
 INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.out
 INPUT /home/vill/Documents/PDeclarativa/proyecto-final-kevRicardo/reporte/FibonacciHeap.out

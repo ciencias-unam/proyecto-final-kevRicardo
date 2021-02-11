@@ -62,11 +62,5 @@ module FibonacciHeap where
     eliminaMinimo (FHeap _ (Node _ n []) []) = Empty
     eliminaMinimo (FHeap t m a) = FHeap (t-1) min arboles
       where
+        -- ^ Reacomoda los árboles para mantener al estructura
         (min, arboles) = getMinimo $ fusionaBTree $ (hijos m) ++ a
-        
-
-    fh = FHeap 5 (Node 1 0 []) [
-        Node 1 1 [],
-        Node 1 2 [],
-        Node 1 3 [],
-        Node 1 4 []]
