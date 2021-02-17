@@ -8,7 +8,7 @@
 * **Ayudante:** Luis Fernando Loyola Cruz
 * **Alumno:** Villegas Salvador Kevin Ricardo
 
-Nos posicionamos dentro la dirección
+Para poder correr el proyecto nos posicionamos dentro la dirección
 ```
 .../proyecto-final-kevRicardo/proyecto$
 ```
