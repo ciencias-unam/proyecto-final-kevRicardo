@@ -11,7 +11,7 @@ module FibonacciHeap where
     data FHeap a = Empty | FHeap {
         tam :: Int,
         minTree :: BTree a,
-        arboles :: [BTree a]}
+        arboles :: [BTree a] }
         deriving (Eq, Show, Ord)
 
     -- | Instancia Functor a Fibonacci Heap
@@ -33,7 +33,6 @@ module FibonacciHeap where
         foldr f acc Empty = acc
         foldr f acc (FHeap t m []) = foldr f acc m
         foldr f acc (FHeap t m (a:as)) = foldr f (foldr f (foldr f acc m) Empty) (FHeap t a as)
-
 
     -- | Une dos F-Heaps en uno nuevo
     funde :: (Ord a) => FHeap a -> FHeap a -> FHeap a
@@ -59,8 +58,32 @@ module FibonacciHeap where
 
     -- | Elimina el elemento mínimo de un Fibonacci Heap
     eliminaMinimo :: (Ord a) => FHeap a -> FHeap a
-    eliminaMinimo (FHeap _ (Node _ n []) []) = Empty
+    eliminaMinimo (FHeap _ (Node _ n m []) []) = Empty
     eliminaMinimo (FHeap t m a) = FHeap (t-1) min arboles
       where
         -- ^ Reacomoda los árboles para mantener al estructura
         (min, arboles) = getMinimo $ fusionaBTree $ (hijos m) ++ a
+
+    decrementaLlave :: (Ord a) => FHeap a -> BTree a -> a -> FHeap a
+    decrementaLlave a b c = a
+
+    corte :: (Ord a) => FHeap a -> BTree a -> FHeap a
+    corte fh@(FHeap t m a) btree 
+        | m == btree = eliminaMinimo fh
+        | otherwise = if bts == []
+            then (FHeap (t+1) m bts)
+            else (FHeap t m bts)
+      where
+        (bt, bts) = corteBTree a btree
+
+    fibonacci = FHeap 11 (Node 1 0 False []) [
+        Node 1 10 False [],
+        Node 1 9 False [],
+        Node 1 8 False [],
+        Node 1 7 False [],
+        Node 1 6 False [],
+        Node 3 1 False [
+            Node 2 3 False [
+                Node 1 4 False []],
+            Node 1 5 False []],
+        Node 1 2 False []]
